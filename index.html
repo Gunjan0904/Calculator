@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Calculater</h1>
+    Enter any Value <input id="input1"></br>
+    </br>
+    Enter any Value <input id="input2">
+    </br>
+    </br>
+
+    <button id="btn1" onclick="add()">+</button>
+    <button id="btn2" onclick="sub()">-</button>
+    <button id="btn3" onclick="mul()">*</button>
+    <button id="btn4" onclick="div()">/</button>
+    </br>
+    </br>
+    Answer :<input id="ans">
+
+
+    <script>
+        function add() {
+            let a, b, add;
+            a = parseInt(document.getElementById("input1").value);
+            b = parseInt(document.getElementById("input2").value);
+            add = a + b;
+            document.getElementById("ans").value = add;
+
+        }
+
+        function sub() {
+            let a, b, sub;
+            a = parseInt(document.getElementById("input1").value);
+            b = parseInt(document.getElementById("input2").value);
+            sub = a - b;
+            document.getElementById("ans").value = sub;
+
+        }
+
+        function mul() {
+            let a, b, mul;
+            a = parseInt(document.getElementById("input1").value);
+            b = parseInt(document.getElementById("input2").value);
+            mul = a * b;
+            document.getElementById("ans").value = mul;
+
+        }
+
+        function div() {
+            let a, b, div;
+            a = parseInt(document.getElementById("input1").value);
+            b = parseInt(document.getElementById("input2").value);
+            div = a / b;
+            document.getElementById("ans").value = div;
+
+        }
+    </script>
+
+</body>
+
+</html>
